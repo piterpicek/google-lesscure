@@ -5,6 +5,7 @@ Note: `node lastest version needed`
 
 ## Installation
 Download: `git clone https://github.com/piterpicek/google-lesscure.git lesscure`
+
 Requirements:
 1. `npm install fs --save`
 2. `npm install puppeteer --save`
