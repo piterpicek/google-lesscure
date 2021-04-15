@@ -23,4 +23,4 @@ This tools for help easywork and not ilegal activity.
 
 ## License
 
-MIT. See [LICENSE](https://github.com/piterpicek/google-lesscure/blob/main/LICENSE)
+GNU General Public License v3.0. See [LICENSE](https://github.com/piterpicek/google-lesscure/blob/main/LICENSE)

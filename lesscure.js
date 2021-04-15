@@ -16,11 +16,11 @@ const LessScure = async () => {
 		process.exit()
 	}
 
-	const [ user, pass ] = Empass[Counter].split(',', 2)
+	const [ user, pass ] = Empass[Counter].split(',', 2) // Channge this if you have other splitter or to add data
 	const browser = await pupet.launch({
 		args: [
 			'--no-sandbox',
-			'--disable-setuid-sandbox'
+			'--disable-setuid-sandbox' // Fix for local os running
 		], 
 		headless: false
 	})
@@ -29,6 +29,7 @@ const LessScure = async () => {
 
 	await page.goto('https://myaccount.google.com/lesssecureapps?pli=1', {waitUntil: 'networkidle0'})
 	try{
+		// Change/update this page.click if google have update pages
 		await (await page.click('#yDmH0d > c-wiz > div > div:nth-child(2) > c-wiz > c-wiz > div > div.s7iwrf.gMPiLc.Kdcijb > div > div > c-wiz > section > div > div > div > div > div > div > div > div.qFiThd > div > div'))
 		await delaySec(3000)
 		try{
@@ -51,6 +52,7 @@ const LessScure = async () => {
 
 					await delaySec(3000)
 					
+					// Change/update this page.click if google have update pages
 					await (await page.waitForXPath('//*[@id="yDmH0d"]/c-wiz/div/div[3]/c-wiz/div/div[2]/div/div/div/ul/li/div[1]/div/div[2]/div/div/div[2]/input')).click()
 					console.log(`${colors.green('SUCCESS LessScure')} [${C}/${total}] ${user} | ${pass}`);
 					fs.appendFileSync('SUCCESS_LESSSECURE.txt', Empass[Counter] + "\n");
