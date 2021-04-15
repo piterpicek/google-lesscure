@@ -1,11 +1,11 @@
 # google-lesscure
 Google Lesscure for batch user workspace and gsuite
 
-using `node lastest version`
+Note: `node lastest version needed`
 
 ## Installation
 Download: `git clone https://github.com/piterpicek/google-lesscure.git lesscure`
-requirements:
+Requirements:
 1. `npm install fs --save`
 2. `npm install puppeteer --save`
 3. `npm install colors --save`
